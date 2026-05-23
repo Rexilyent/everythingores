@@ -118,6 +118,8 @@ This opens the profiles folder in Explorer — find your **Forge Everything** in
 
 > **Note:** Use double backslashes `\\` in the path, not single `\`.
 
+> **Note:** This path is only if you're using modrinth as your launcher. Otherwise it will need to point to where ever you have the modpack installed.
+
 ---
 
 ## Building and Deploying

@@ -1,1 +1,5 @@
-{ "values": ["everythingores:sulfur"] }
+{
+  "values": [
+    "everythingores:sulfur_dust"
+  ]
+}

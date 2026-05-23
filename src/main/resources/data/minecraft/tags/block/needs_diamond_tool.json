@@ -1,1 +1,12 @@
-{ "values": ["everythingores:uranium_ore", "everythingores:deepslate_uranium_ore", "everythingores:platinum_ore", "everythingores:deepslate_platinum_ore"] }
+{
+  "values": [
+    "everythingores:uranium_ore",
+    "everythingores:deepslate_uranium_ore",
+    "everythingores:platinum_ore",
+    "everythingores:deepslate_platinum_ore",
+    "everythingores:tungsten_ore",
+    "everythingores:deepslate_tungsten_ore",
+    "everythingores:iridium_ore",
+    "everythingores:deepslate_iridium_ore"
+  ]
+}

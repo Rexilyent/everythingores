@@ -1,5 +1,8 @@
-
+# Cache and build files
 bin/
+
+# Source Backups
+*.zip
 
 # Gradle
 .gradle/
@@ -10,7 +13,7 @@ src/generated/
 # NeoForge MDK cache
 run/
 
-# IntelliJ (in case you ever switch)
+# IntelliJ
 .idea/
 *.iml
 *.ipr
