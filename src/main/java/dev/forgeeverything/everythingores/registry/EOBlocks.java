@@ -150,10 +150,10 @@ public class EOBlocks {
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_BISMUTH_ORE =
             deepslateOre("deepslate_bismuth_ore", UniformInt.of(0, 2), 4.5F, MapColor.DEEPSLATE);
 
-    public static final DeferredBlock<DropExperienceBlock> CHROMIUM_ORE =
-            stoneOre("chromium_ore", UniformInt.of(1, 3), 3.0F, MapColor.METAL);
-    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_CHROMIUM_ORE =
-            deepslateOre("deepslate_chromium_ore", UniformInt.of(1, 3), 4.5F, MapColor.DEEPSLATE);
+    public static final DeferredBlock<DropExperienceBlock> CHROMITE_ORE =
+            stoneOre("chromite_ore", UniformInt.of(1, 3), 3.0F, MapColor.METAL);
+    public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_CHROMITE_ORE =
+            deepslateOre("deepslate_chromite_ore", UniformInt.of(1, 3), 4.5F, MapColor.DEEPSLATE);
 
     public static final DeferredBlock<DropExperienceBlock> TUNGSTEN_ORE =
             stoneOre("tungsten_ore", UniformInt.of(1, 4), 4.5F, MapColor.COLOR_GRAY);
@@ -182,7 +182,7 @@ public class EOBlocks {
     // Unified metals
     public static final DeferredBlock<Block> RAW_OSMIUM_BLOCK   = rawBlock("raw_osmium_block",   4.5F, MapColor.COLOR_BLUE);
     public static final DeferredBlock<Block> RAW_BISMUTH_BLOCK  = rawBlock("raw_bismuth_block",  4.5F, MapColor.COLOR_PINK);
-    public static final DeferredBlock<Block> RAW_CHROMIUM_BLOCK = rawBlock("raw_chromium_block", 4.5F, MapColor.METAL);
+    public static final DeferredBlock<Block> RAW_CHROMITE_BLOCK = rawBlock("raw_chromite_block", 4.5F, MapColor.METAL);
     public static final DeferredBlock<Block> RAW_TUNGSTEN_BLOCK = rawBlock("raw_tungsten_block", 5.5F, MapColor.COLOR_GRAY);
     public static final DeferredBlock<Block> RAW_IRIDIUM_BLOCK  = rawBlock("raw_iridium_block",  4.5F, MapColor.GOLD);
 
@@ -217,4 +217,7 @@ public class EOBlocks {
     public static final DeferredBlock<Block> INVAR_BLOCK           = metalBlock("invar_block",           5.0F, MapColor.METAL);
     public static final DeferredBlock<Block> BRONZE_BLOCK          = metalBlock("bronze_block",          5.0F, MapColor.COLOR_ORANGE);
     public static final DeferredBlock<Block> STAINLESS_STEEL_BLOCK = metalBlock("stainless_steel_block", 6.0F, MapColor.METAL);
+
+    // Red Alloy — Cu + Redstone. Absorbs MoreRed red_alloy and EnderIO redstone_alloy.
+    public static final DeferredBlock<Block> RED_ALLOY_BLOCK = metalBlock("red_alloy_block", 5.0F, MapColor.COLOR_RED);
 }

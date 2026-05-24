@@ -57,7 +57,7 @@
     "everythingores:bismuth_block",
     "everythingores:raw_bismuth_block",
     "everythingores:chromium_block",
-    "everythingores:raw_chromium_block",
+    "everythingores:raw_chromite_block",
     "everythingores:tungsten_block",
     "everythingores:raw_tungsten_block",
     "everythingores:iridium_block",
@@ -67,6 +67,7 @@
     "everythingores:constantan_block",
     "everythingores:invar_block",
     "everythingores:bronze_block",
-    "everythingores:stainless_steel_block"
+    "everythingores:stainless_steel_block",
+    "everythingores:red_alloy_block"
   ]
 }

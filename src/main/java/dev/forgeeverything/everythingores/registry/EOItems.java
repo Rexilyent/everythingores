@@ -62,8 +62,8 @@ public class EOItems {
     public static final DeferredItem<BlockItem> DEEPSLATE_FLUORITE_ORE_ITEM  = ITEMS.registerSimpleBlockItem(EOBlocks.DEEPSLATE_FLUORITE_ORE);
     public static final DeferredItem<BlockItem> BISMUTH_ORE_ITEM             = ITEMS.registerSimpleBlockItem(EOBlocks.BISMUTH_ORE);
     public static final DeferredItem<BlockItem> DEEPSLATE_BISMUTH_ORE_ITEM   = ITEMS.registerSimpleBlockItem(EOBlocks.DEEPSLATE_BISMUTH_ORE);
-    public static final DeferredItem<BlockItem> CHROMIUM_ORE_ITEM            = ITEMS.registerSimpleBlockItem(EOBlocks.CHROMIUM_ORE);
-    public static final DeferredItem<BlockItem> DEEPSLATE_CHROMIUM_ORE_ITEM  = ITEMS.registerSimpleBlockItem(EOBlocks.DEEPSLATE_CHROMIUM_ORE);
+    public static final DeferredItem<BlockItem> CHROMITE_ORE_ITEM            = ITEMS.registerSimpleBlockItem(EOBlocks.CHROMITE_ORE);
+    public static final DeferredItem<BlockItem> DEEPSLATE_CHROMITE_ORE_ITEM  = ITEMS.registerSimpleBlockItem(EOBlocks.DEEPSLATE_CHROMITE_ORE);
     public static final DeferredItem<BlockItem> TUNGSTEN_ORE_ITEM            = ITEMS.registerSimpleBlockItem(EOBlocks.TUNGSTEN_ORE);
     public static final DeferredItem<BlockItem> DEEPSLATE_TUNGSTEN_ORE_ITEM  = ITEMS.registerSimpleBlockItem(EOBlocks.DEEPSLATE_TUNGSTEN_ORE);
     public static final DeferredItem<BlockItem> IRIDIUM_ORE_ITEM             = ITEMS.registerSimpleBlockItem(EOBlocks.IRIDIUM_ORE);
@@ -83,7 +83,7 @@ public class EOItems {
     public static final DeferredItem<BlockItem> RAW_PLATINUM_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_PLATINUM_BLOCK);
     public static final DeferredItem<BlockItem> RAW_OSMIUM_BLOCK_ITEM   = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_OSMIUM_BLOCK);
     public static final DeferredItem<BlockItem> RAW_BISMUTH_BLOCK_ITEM  = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_BISMUTH_BLOCK);
-    public static final DeferredItem<BlockItem> RAW_CHROMIUM_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_CHROMIUM_BLOCK);
+    public static final DeferredItem<BlockItem> RAW_CHROMITE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_CHROMITE_BLOCK);
     public static final DeferredItem<BlockItem> RAW_TUNGSTEN_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_TUNGSTEN_BLOCK);
     public static final DeferredItem<BlockItem> RAW_IRIDIUM_BLOCK_ITEM  = ITEMS.registerSimpleBlockItem(EOBlocks.RAW_IRIDIUM_BLOCK);
 
@@ -118,6 +118,7 @@ public class EOItems {
     public static final DeferredItem<BlockItem> INVAR_BLOCK_ITEM           = ITEMS.registerSimpleBlockItem(EOBlocks.INVAR_BLOCK);
     public static final DeferredItem<BlockItem> BRONZE_BLOCK_ITEM          = ITEMS.registerSimpleBlockItem(EOBlocks.BRONZE_BLOCK);
     public static final DeferredItem<BlockItem> STAINLESS_STEEL_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(EOBlocks.STAINLESS_STEEL_BLOCK);
+    public static final DeferredItem<BlockItem> RED_ALLOY_BLOCK_ITEM       = ITEMS.registerSimpleBlockItem(EOBlocks.RED_ALLOY_BLOCK);
 
     // ================================================================
     // RAW ORES  (dropped by metallic ore blocks)
@@ -136,7 +137,7 @@ public class EOItems {
     // Unified metals
     public static final DeferredItem<Item> RAW_OSMIUM   = ITEMS.registerSimpleItem("raw_osmium");
     public static final DeferredItem<Item> RAW_BISMUTH  = ITEMS.registerSimpleItem("raw_bismuth");
-    public static final DeferredItem<Item> RAW_CHROMIUM = ITEMS.registerSimpleItem("raw_chromium");
+    public static final DeferredItem<Item> RAW_CHROMITE = ITEMS.registerSimpleItem("raw_chromite");
     public static final DeferredItem<Item> RAW_TUNGSTEN = ITEMS.registerSimpleItem("raw_tungsten");
     public static final DeferredItem<Item> RAW_IRIDIUM  = ITEMS.registerSimpleItem("raw_iridium");
 
@@ -171,6 +172,8 @@ public class EOItems {
     public static final DeferredItem<Item> INVAR_INGOT          = ITEMS.registerSimpleItem("invar_ingot");
     public static final DeferredItem<Item> BRONZE_INGOT         = ITEMS.registerSimpleItem("bronze_ingot");
     public static final DeferredItem<Item> STAINLESS_STEEL_INGOT = ITEMS.registerSimpleItem("stainless_steel_ingot");
+    // Red Alloy — Cu + Redstone. Absorbs MoreRed:red_alloy_ingot and EnderIO:redstone_alloy_ingot.
+    public static final DeferredItem<Item> RED_ALLOY_INGOT      = ITEMS.registerSimpleItem("red_alloy_ingot");
 
     // ================================================================
     // MINERAL DROPS  (dropped directly from non-metallic ore blocks)
@@ -209,6 +212,7 @@ public class EOItems {
     public static final DeferredItem<Item> OSMIUM_DUST   = ITEMS.registerSimpleItem("osmium_dust");
     public static final DeferredItem<Item> BISMUTH_DUST  = ITEMS.registerSimpleItem("bismuth_dust");
     public static final DeferredItem<Item> CHROMIUM_DUST = ITEMS.registerSimpleItem("chromium_dust");
+		public static final DeferredItem<Item> CHROMITE_DUST = ITEMS.registerSimpleItem("chromite_dust");
     public static final DeferredItem<Item> TUNGSTEN_DUST = ITEMS.registerSimpleItem("tungsten_dust");
     public static final DeferredItem<Item> IRIDIUM_DUST  = ITEMS.registerSimpleItem("iridium_dust");
 
@@ -217,10 +221,87 @@ public class EOItems {
     public static final DeferredItem<Item> FLUORITE_DUST = ITEMS.registerSimpleItem("fluorite_dust");
 
     // Alloy dusts
-    public static final DeferredItem<Item> STEEL_DUST          = ITEMS.registerSimpleItem("steel_dust");
-    public static final DeferredItem<Item> ELECTRUM_DUST       = ITEMS.registerSimpleItem("electrum_dust");
-    public static final DeferredItem<Item> CONSTANTAN_DUST     = ITEMS.registerSimpleItem("constantan_dust");
-    public static final DeferredItem<Item> INVAR_DUST          = ITEMS.registerSimpleItem("invar_dust");
-    public static final DeferredItem<Item> BRONZE_DUST         = ITEMS.registerSimpleItem("bronze_dust");
+    public static final DeferredItem<Item> STEEL_DUST           = ITEMS.registerSimpleItem("steel_dust");
+    public static final DeferredItem<Item> ELECTRUM_DUST        = ITEMS.registerSimpleItem("electrum_dust");
+    public static final DeferredItem<Item> CONSTANTAN_DUST      = ITEMS.registerSimpleItem("constantan_dust");
+    public static final DeferredItem<Item> INVAR_DUST           = ITEMS.registerSimpleItem("invar_dust");
+    public static final DeferredItem<Item> BRONZE_DUST          = ITEMS.registerSimpleItem("bronze_dust");
     public static final DeferredItem<Item> STAINLESS_STEEL_DUST = ITEMS.registerSimpleItem("stainless_steel_dust");
+    public static final DeferredItem<Item> RED_ALLOY_DUST       = ITEMS.registerSimpleItem("red_alloy_dust");
+
+    // ================================================================
+    // TINY DUSTS  (1/9 of a full dust — used in Mekanism ore processing
+    //             and several other tech mod processing chains)
+    // ================================================================
+
+    // Vanilla metals
+    public static final DeferredItem<Item> TINY_IRON_DUST   = ITEMS.registerSimpleItem("tiny_iron_dust");
+    public static final DeferredItem<Item> TINY_GOLD_DUST   = ITEMS.registerSimpleItem("tiny_gold_dust");
+    public static final DeferredItem<Item> TINY_COPPER_DUST = ITEMS.registerSimpleItem("tiny_copper_dust");
+
+    // Original metals
+    public static final DeferredItem<Item> TINY_TIN_DUST      = ITEMS.registerSimpleItem("tiny_tin_dust");
+    public static final DeferredItem<Item> TINY_LEAD_DUST     = ITEMS.registerSimpleItem("tiny_lead_dust");
+    public static final DeferredItem<Item> TINY_NICKEL_DUST   = ITEMS.registerSimpleItem("tiny_nickel_dust");
+    public static final DeferredItem<Item> TINY_ALUMINUM_DUST = ITEMS.registerSimpleItem("tiny_aluminum_dust");
+    public static final DeferredItem<Item> TINY_ZINC_DUST     = ITEMS.registerSimpleItem("tiny_zinc_dust");
+    public static final DeferredItem<Item> TINY_SILVER_DUST   = ITEMS.registerSimpleItem("tiny_silver_dust");
+    public static final DeferredItem<Item> TINY_URANIUM_DUST  = ITEMS.registerSimpleItem("tiny_uranium_dust");
+    public static final DeferredItem<Item> TINY_PLATINUM_DUST = ITEMS.registerSimpleItem("tiny_platinum_dust");
+
+    // Unified metals
+    public static final DeferredItem<Item> TINY_OSMIUM_DUST   = ITEMS.registerSimpleItem("tiny_osmium_dust");
+    public static final DeferredItem<Item> TINY_BISMUTH_DUST  = ITEMS.registerSimpleItem("tiny_bismuth_dust");
+    public static final DeferredItem<Item> TINY_TUNGSTEN_DUST = ITEMS.registerSimpleItem("tiny_tungsten_dust");
+    public static final DeferredItem<Item> TINY_IRIDIUM_DUST  = ITEMS.registerSimpleItem("tiny_iridium_dust");
+		public static final DeferredItem<Item> TINY_CHROMIUM_DUST = ITEMS.registerSimpleItem("tiny_chromium_dust");
+		public static final DeferredItem<Item> TINY_CHROMITE_DUST = ITEMS.registerSimpleItem("tiny_chromite_dust");
+
+    // Minerals
+    public static final DeferredItem<Item> TINY_SULFUR_DUST   = ITEMS.registerSimpleItem("tiny_sulfur_dust");
+    public static final DeferredItem<Item> TINY_FLUORITE_DUST = ITEMS.registerSimpleItem("tiny_fluorite_dust");
+
+    // Alloys
+    public static final DeferredItem<Item> TINY_STEEL_DUST           = ITEMS.registerSimpleItem("tiny_steel_dust");
+    public static final DeferredItem<Item> TINY_ELECTRUM_DUST        = ITEMS.registerSimpleItem("tiny_electrum_dust");
+    public static final DeferredItem<Item> TINY_CONSTANTAN_DUST      = ITEMS.registerSimpleItem("tiny_constantan_dust");
+    public static final DeferredItem<Item> TINY_INVAR_DUST           = ITEMS.registerSimpleItem("tiny_invar_dust");
+    public static final DeferredItem<Item> TINY_BRONZE_DUST          = ITEMS.registerSimpleItem("tiny_bronze_dust");
+    public static final DeferredItem<Item> TINY_STAINLESS_STEEL_DUST = ITEMS.registerSimpleItem("tiny_stainless_steel_dust");
+    public static final DeferredItem<Item> TINY_RED_ALLOY_DUST       = ITEMS.registerSimpleItem("tiny_red_alloy_dust");
+
+    // ================================================================
+    // PLATES  (pressed ingot form — used by IE, Mekanism, MI, and
+    //          many other tech mods in their crafting recipes)
+    // ================================================================
+
+    // Vanilla metals
+    public static final DeferredItem<Item> IRON_PLATE   = ITEMS.registerSimpleItem("iron_plate");
+    public static final DeferredItem<Item> GOLD_PLATE   = ITEMS.registerSimpleItem("gold_plate");
+    public static final DeferredItem<Item> COPPER_PLATE = ITEMS.registerSimpleItem("copper_plate");
+
+    // Original metals
+    public static final DeferredItem<Item> TIN_PLATE      = ITEMS.registerSimpleItem("tin_plate");
+    public static final DeferredItem<Item> LEAD_PLATE     = ITEMS.registerSimpleItem("lead_plate");
+    public static final DeferredItem<Item> NICKEL_PLATE   = ITEMS.registerSimpleItem("nickel_plate");
+    public static final DeferredItem<Item> ALUMINUM_PLATE = ITEMS.registerSimpleItem("aluminum_plate");
+    public static final DeferredItem<Item> ZINC_PLATE     = ITEMS.registerSimpleItem("zinc_plate");
+    public static final DeferredItem<Item> SILVER_PLATE   = ITEMS.registerSimpleItem("silver_plate");
+    public static final DeferredItem<Item> URANIUM_PLATE  = ITEMS.registerSimpleItem("uranium_plate");
+    public static final DeferredItem<Item> PLATINUM_PLATE = ITEMS.registerSimpleItem("platinum_plate");
+
+    // Unified metals
+    public static final DeferredItem<Item> OSMIUM_PLATE   = ITEMS.registerSimpleItem("osmium_plate");
+    public static final DeferredItem<Item> BISMUTH_PLATE  = ITEMS.registerSimpleItem("bismuth_plate");
+    public static final DeferredItem<Item> TUNGSTEN_PLATE = ITEMS.registerSimpleItem("tungsten_plate");
+    public static final DeferredItem<Item> IRIDIUM_PLATE  = ITEMS.registerSimpleItem("iridium_plate");
+
+    // Alloys
+    public static final DeferredItem<Item> STEEL_PLATE           = ITEMS.registerSimpleItem("steel_plate");
+    public static final DeferredItem<Item> ELECTRUM_PLATE        = ITEMS.registerSimpleItem("electrum_plate");
+    public static final DeferredItem<Item> CONSTANTAN_PLATE      = ITEMS.registerSimpleItem("constantan_plate");
+    public static final DeferredItem<Item> INVAR_PLATE           = ITEMS.registerSimpleItem("invar_plate");
+    public static final DeferredItem<Item> BRONZE_PLATE          = ITEMS.registerSimpleItem("bronze_plate");
+    public static final DeferredItem<Item> STAINLESS_STEEL_PLATE = ITEMS.registerSimpleItem("stainless_steel_plate");
+    public static final DeferredItem<Item> RED_ALLOY_PLATE       = ITEMS.registerSimpleItem("red_alloy_plate");
 }

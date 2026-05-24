@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "everythingores:item/stainless_steel_shovel"
+  }
+}
